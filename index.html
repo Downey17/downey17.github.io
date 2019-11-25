@@ -4,7 +4,7 @@
         <div id="nav">
             <button onclick="clickLondon()">London</button>
             <button onclick="clickParis()">Paris</button>
-            <button type="button">Tokyo</button>
+            <button onclick="clickTokyo()>Tokyo</button>
         </div>
         <div id="section">
             <h1 id = "title">London</h1>
@@ -21,10 +21,15 @@
     </body>
     <script type="text/javascript">
         function clickLondon(){
+            console.log("clickLondon==value:", document.getElementById("title").value)
             document.getElementById("title").value = "title";
-            console.log("clickLondon")
         }
         function clickParis(){
+            console.log("clickParis")
+            document.getElementById("title").value = "title";
+        }
+         function clickTokyo(){
+            console.log("clickTokyo")
             document.getElementById("title").value = "title";
         }
     </script>
