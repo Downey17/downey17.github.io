@@ -3,16 +3,18 @@
         <div id="header"><h1>City Gallery</h1></div>
         <div id="nav">
             <button onclick="clickLondon()">London</button>
+            <div><br></div>
             <button onclick="clickParis()">Paris</button>
+            <div><br></div>
             <button onclick="clickTokyo()">Tokyo</button>
         </div>
         <div id="section">
             <h1 id="title">London</h1>
-            <p>
+            <p id="text1">
                 London is the capital city of England. It is the most populous city in the United Kingdom,
                 with a metropolitan area of over 13 million inhabitants.
             </p>
-            <p>
+            <p id="text2">
                 Standing on the River Thames, London has been a major settlement for two millennia,
                 its history going back to its founding by the Romans, who named it Londinium.
             </p>
@@ -21,50 +23,67 @@
     </body>
     <script type="text/javascript">
         function clickLondon(){
-            console.log("clickLondon==value:", document.getElementById("title").value)
-            document.getElementById("title").value = "title";
+            document.getElementById("title").innerHTML= "London";
+            document.getElementById("text1").innerHTML= "London";
+            document.getElementById("text2").innerHTML= "London";
         }
     </script>
     <script type="text/javascript">
         function clickParis(){
-            console.log("clickParis")
-            document.getElementById("title").value = "title";
+            document.getElementById("title").innerHTML = "Paris";
+            document.getElementById("text1").innerHTML= "Paris";
+            document.getElementById("text2").innerHTML= "Paris";
         }
     </script>
     <script type="text/javascript">
-         function clickTokyo(){
-            console.log("clickTokyo")
-            document.getElementById("title").value = "title";
+        function clickTokyo(){
+            document.getElementById("title").innerHTML = "Tokyo";
+            document.getElementById("text1").innerHTML= "Tokyo";
+            document.getElementById("text2").innerHTML= "Tokyo";
         }
     </script>
 </html>
 
 <style>
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-#nav {
-    line-height:30px;
-    background-color:#808a87;
-    height:100%;
-    width:100px;
-    float:left;
-    padding:5px; 
-}
-#section {
-    width:350px;
-    float:left;
-    padding:10px;
-    height:100%;
-}
-#footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px; 
-}
+    #header {
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+    }
+    #nav {
+        line-height:30px;
+        background-color:#808a87;
+        height:100%;
+        width:100px;
+        float:left;
+        padding:5px; 
+    }
+    #section {
+        width:350px;
+        float:left;
+        padding:10px;
+        height:100%;
+    }
+    #footer {
+        background-color:black;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px; 
+    }
+    #button {
+        background-color:#C0C0C0;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+    }
+    #button:hover {
+        opacity: 0.8;
+    }
 </style>
